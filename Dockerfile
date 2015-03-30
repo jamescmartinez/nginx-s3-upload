@@ -30,6 +30,7 @@ RUN ./configure --sbin-path=/usr/local/sbin \
                 --pid-path=/var/run/nginx.pid \
                 --error-log-path=/var/log/nginx/error.log \
                 --http-log-path=/var/log/nginx/access.log \
+                --with-http_auth_request_module \
                 --with-http_ssl_module \
                 --add-module=/tmp/ngx_devel_kit \
                 --add-module=/tmp/set-misc-nginx-module \
