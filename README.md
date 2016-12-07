@@ -3,12 +3,7 @@ S3 file upload proxy using Nginx, complete with AWS authentication.
 
 ## Installation
 
-Create a `.env` file to hold your environment variables for Nginx. It should contain the following:
-```bash
-AWS_ACCESS_KEY_ID=YOURAWSACCESSKEYID
-AWS_SECRET_ACCESS_KEY=YOURAWSSECRETACCESSKEY
-S3_BUCKET_NAME=YOURS3BUCKETNAME
-```
+Create a `.env` file to hold your environment variables for Nginx. You can base on the `.env.example` file contained in root folder.
 
 Using Docker, build the image.
 ```bash
