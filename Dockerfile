@@ -8,18 +8,18 @@ RUN apt-get update && \
 
 # Download Nginx
 WORKDIR /tmp
-RUN wget http://nginx.org/download/nginx-1.6.2.tar.gz -O nginx.tar.gz && \
+RUN wget http://nginx.org/download/nginx-1.14.0.tar.gz -O nginx.tar.gz && \
     mkdir nginx && \
     tar xf nginx.tar.gz -C nginx --strip-components=1
 
 # Download Nginx modules
-RUN wget https://github.com/simpl/ngx_devel_kit/archive/v0.2.19.tar.gz -O ngx_devel_kit.tar.gz && \
+RUN wget https://github.com/simpl/ngx_devel_kit/archive/v0.3.0.tar.gz -O ngx_devel_kit.tar.gz && \
     mkdir ngx_devel_kit && \
     tar xf ngx_devel_kit.tar.gz -C ngx_devel_kit --strip-components=1
-RUN wget https://github.com/openresty/set-misc-nginx-module/archive/v0.28.tar.gz -O set-misc-nginx-module.tar.gz && \
+RUN wget https://github.com/openresty/set-misc-nginx-module/archive/v0.32.tar.gz -O set-misc-nginx-module.tar.gz && \
     mkdir set-misc-nginx-module && \
     tar xf set-misc-nginx-module.tar.gz -C set-misc-nginx-module --strip-components=1
-RUN wget https://github.com/openresty/lua-nginx-module/archive/v0.9.15.tar.gz -O lua-nginx-module.tar.gz && \
+RUN wget https://github.com/openresty/lua-nginx-module/archive/v0.10.13.tar.gz -O lua-nginx-module.tar.gz && \
     mkdir lua-nginx-module && \
     tar xf lua-nginx-module.tar.gz -C lua-nginx-module --strip-components=1
 
